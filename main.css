@@ -30,7 +30,7 @@ body{
 /* hero section*/
 #hero{
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     background:url("img/doctors.jpg") center;
     background-size: cover;
     
@@ -57,7 +57,7 @@ body{
     top: 0;
     left: 0;
     right: 0;
-    height: 80vh;
+    height: 100vh;
 }
 
 #hero h1{
@@ -127,3 +127,96 @@ font-size: 22px;
     font-size: 14px;
     margin-bottom: 0;
 }
+
+/*about section
+
+.about-section{
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+
+}
+
+.about-heading{
+    text-transform: uppercase;
+    
+}
+
+.about-heading-upper{
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.about-heading-lower{
+    display: block;
+    font-size: 38px;
+    font-weight: lighter;
+}
+
+.bg-faded{
+    background: rgba(17, 219,207, 0.8);
+}
+.about-button .btn-color{
+    background: #03a59a;
+    color:#fff;
+    font-weight: bold;
+}
+.about{
+    position: relative;
+}
+@media screen and (min-width:992px){
+    .about .about-image{
+        width: 75px;
+        float: right;
+    }
+    .about .about-text{
+        left: 0;
+        width: 60%;
+        margin-top: 3rem;
+        position: absolute;
+    }
+    .about .about-text .about-button{
+        width: 100%;
+        left: 0;
+        position: absolute;
+        bottom: -2rem;
+    }
+} 
+@media screen and (min-width:1200px){
+    .about .about-text{
+        width: 45%;
+    }
+    
+
+}*/
+.about{
+    text-align: center;
+    background: rgb(57, 211, 57);
+    padding:50px 20px 60px 20px;
+}
+
+.about .icon{
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: #fff;
+    border-radius: 50px;
+}
+.about .icon i{
+    color: rgb(57, 211, 57);f;
+    font-size: 32px;
+    line-height: 1;
+    position: relative;
+}
+
+.about h3{
+ margin: 20px 0 15px 0px;
+font-weight: bold;
+font-size: 22px;
+}
+/*end of about section*/
+
