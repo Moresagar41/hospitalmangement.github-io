@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/57bb2ed5a1.js" crossorigin="anonymous"></script>
+
+    <script>
+        
+    </script>
 </head>
   <body>
       
@@ -19,7 +23,9 @@
     <nav>
         <div class="navbar navbar-expand-lg nav-back fixed-top" id="nav">
             <div class="container">
-                <a href="#" class="navbar-brand">Patil's Clinic</a>
+                <img src="img/logo.jpg" width="50" height="50" alt="" loading="lazy">&nbsp; &nbsp;
+                <a href="#" class="navbar-brand">Patil Clinic</a>
+                
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-syringe fa-2x"></i></button>
@@ -27,24 +33,26 @@
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Services</a>
-                        </li>
+                            <a href="#services" class="nav-link">Services</a>
+                        </li>&nbsp;&nbsp;
 
                         <li class="nav-item">
-                            <a href="#" class="nav-link">About</a>
-                        </li>
+                            <a href="#about" class="nav-link">About</a>
+                        </li>&nbsp;&nbsp;
 
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Medical Camps</a>
-                        </li>
+                            <a href="#team" class="nav-link">Teams</a>
+                        </li>&nbsp;&nbsp;
 
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Teams</a>
+                            <a href="#c" class="nav-link">contacts</a>
                         </li>
 
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">contacts</a>
+                        <li>
+                            <a href="#about" class="nav-link">Appointment</a>
                         </li>
+
+
                     </ul>
                 </div>
             </div>
@@ -58,13 +66,12 @@
                     <h1 class="w3-animate-top">
                         Welcome to clinic 
                     </h1><br>
-                    <h5 class="w3-animate-left">We offer extensive medical procedures to outbound <br>and inbound paitents</h5>
-                    <h6 class="w3-animate-bottom">our major areas of specialization include oncology,orthopedics,<br>
-                    cardiology,Ivf treatments,urology,nerosurgery,plastic surgery<br>and many other departments</h6><br>
-                    
-                        <a href="#" class="main-btn">Know us</a>
-                   
+                    <h5 class="w3-animate-left" style="line-height: 2.5rem;">We offer extensive medical procedures to outbound and <br>inbound paitents
+                    our major areas of specialization<br> include Heart,Dentist,
+                    cardiology,DNA treatments,Allergies,<br>nerosurgery,plastic surgeryand many other departments</h5><br>
+                        
                 </div>
+                
             </section>
     <!--hero image end-->
 
@@ -72,10 +79,10 @@
             <section id="services" class="services mt-3 mb-3 py-3 ">
                 <div class="container">
                     <div class="section-title">
-                        <h2 class="text-center">Services</h2>
+                        <h2 class="text-center" style="font-weight: bold; text-decoration:underline #47aeff;">Services</h2>
                         
                     </div>
-                    <div class="row">
+                    <div class="row mt-5">
                         <!----->
                         <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
                             <div class="service shadow">
@@ -188,8 +195,9 @@
                     </div>
                 </div>
             </section> -->
-            <h2 class="text-center mt-5" style="font-weight: bold; text-decoration:underline #47aeff;">Why You Choose Us?</h2>
-            <div class="container mt-5">
+            <div id="about"></div>
+            <h2  class="text-center mt-5" style="font-weight: bold; text-decoration:underline rgb(57, 211, 57);">Why You Choose Us?</h2>
+            <div class="container mt-5" >
                 <div class="row">
                     <div class="col-md-4 col-sm-6 col-lg-3 mt-3">
                         <div class="about shadow">
@@ -197,6 +205,63 @@
                                 <i class="far fa-calendar-check"></i>
                             </div>
                             <h3>Take Appointment</h3>
+
+                            <!--Modal-->
+                            <button type="button" class="btn btn-info mt-3" data-toggle="modal" data-target="#appinment" data-whatever="@getbootstrap">
+                                    click here
+                            </button>
+
+
+                            <div class="modal fade" id="appinment" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">Appointment Form</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <form>
+                                        <div class="form-group">
+                                          <label for="paitent-name" class="col-form-label">Paitent Name:</label>
+                                          <input type="text" class="form-control" id="paitent-name">
+                                        </div>
+
+                                        <div class="form-group">
+                                          <label for="message-text" class="col-form-label">Adress:</label>
+                                          <textarea class="form-control" id="message-text"></textarea>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="contact" class="col-form-label">Contact:</label>
+                                            <input type="text" class="form-control" id="contact">
+                                        </div>
+
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              Docotr name
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                              <a class="dropdown-item" href="#">Dr. Sanjyot Kamble</a>
+                                              <a class="dropdown-item" href="#">Dr. Prtiksha Kasbale</a>
+                                              <a class="dropdown-item" href="#">Dr. Nitesh Gupta</a>
+                                            </div>
+                                          </div>
+                                          
+
+                                      </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="reset" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                      <button type="submit" class="btn btn-primary" data-dismiss="modal">Send message</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+
+
                         </div>
                     </div>  
 
@@ -206,6 +271,39 @@
                                     <i class="fas fa-ambulance"></i>
                                 </div>
                                 <h3>Emergency help</h3>
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-info mt-3" data-toggle="modal" data-target="#emergency">
+                                    click here
+                                </button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade" id="emergency" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h5 class="modal-title" id="staticBackdropLabel">For Emergency Call us</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h5><i class="fa fa-ambulance" aria-hidden="true">&nbsp;&nbsp;Ambulance</i></h5>
+                                            +91 2202301659<br>
+                                            +91 2938648428<br>
+                                            <hr>
+                                            
+                                            <h5><i class="fa fa-user-md" aria-hidden="true">&nbsp;&nbsp;Doctor</i></h5>
+                                            +91 75067 75987
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
 
@@ -215,22 +313,284 @@
                                     <i class="fas fa-hospital-user"></i>
                                 </div>
                                 <h3>Morden clinic</h3>
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-info mt-3" data-toggle="modal" data-target="#lab">
+                                    click here
+                                </button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade" id="lab" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h5 class="modal-title" id="staticBackdropLabel">Laboratory info</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        </div>
+                                        <div class="modal-body">
+                                        <h3>For Laboratory Details</h3>
+                                        <h4>Call Us : +91 8169364432</h4>
+                                        <br>
+                                        All reports are given witin 24 hours
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                
+
+
                             </div>
                         </div>
 
                         <div class="col-md-4 col-sm-6 col-lg-3 mt-3">
                             <div class="about shadow">
                                 <div class="icon">
-                                    <i class="far fa-calendar-check"></i>
+                                    <i class="fa fa-file-text-o" aria-hidden="true"></i>
                                 </div>
-                                <h3>Pofressional Staff</h3>
+                                <h3>Insurance Taken</h3>
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-info mt-3" data-toggle="modal" data-target="#insurance">
+                                    click here
+                                </button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade" id="insurance" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h5 class="modal-title" id="staticBackdropLabel">Insurance comapany List</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        </div>
+                                        <div class="modal-body in">
+                                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                                            <h5>1.Religare Health Insurance</h5>
+                                            <h5>2.star Health Insurance</h5>
+                                            <h5>3.LIC Health Insurance</h5>
+                                            <h5>4.HDFC Health Insurance</h5>
+                                            <h5>5.Rajiv gandhi yojana(medical claim)</h5>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+
+
                             </div>
                         </div>
                 </div>
             </div>
     <!--about section end-->
 
+    <!--Team section Strat-->
+    <div id="team"></div>
+<h2  class="mt-5 text-center" style="font-weight: bold; text-decoration:underline #47aeff;">Our Doctors</h2>
 
+
+            <div class="container" id="team">
+                <div class="row mt-5">
+
+                    <div class="col-md-3 col-sm-6 col-lg-4 mt-3col-md-3 col-sm-6 col-lg-4 mt-3">
+                        <div class="team shadow">
+                            <img src="img/doctor5.jpg" height="250px" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title" >Dr.Sanjyot Kamble</h5>
+                                <h5>MBBS, MD, DPM (mum)</h5>
+                                <p class="card-text">
+                                   <h5 style="text-decoration: underline;">SPECIALISATION</h5> 
+                                    <i class="fa fa-check" aria-hidden="true"></i> Skin specialist<br>
+                                    <i class="fa fa-check" aria-hidden="true"></i> Sexologist<br>
+                                    <i class="fa fa-check" aria-hidden="true"></i> Child Psychiatry
+                                </p>
+                                
+                            </div>   
+                            
+                        </div>
+                    </div>  
+
+                    <div class="col-md-3 col-sm-6 col-lg-4 mt-3">
+                        <div class="team shadow">
+                            <img src="img/doctor2.jpg" height="250px"class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Dr. Pratiksha Kasbale</h5>
+                                <h5>MBBS, DPM (pune)</h5>
+                                <p class="card-text">
+                                    <p class="card-text" style="text-decoration: underline;">
+                                        <h5 style="text-decoration: underline;">SPECIALISATION</h5>
+                                        <i class="fa fa-check" aria-hidden="true"></i> Head od Maternity Dept.<br>
+                                        <i class="fa fa-check" aria-hidden="true"></i> Dentist<br>
+                                        <i class="fa fa-check" aria-hidden="true"></i> Cancer specialist
+                                    </p>
+                                
+                                
+                            </div>   
+                            
+                        </div>
+                    </div>  
+
+                    <div class="col-md-3 col-sm-6 col-lg-4 mt-3">
+                        <div class="team shadow">
+                            <img src="img/doctor6.png" height="250px"  class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Dr.Nitesh Gupta</h5>
+                                <h5>MBBS, DNB (PSY), DPM (mum)</h5>
+                                <p class="card-text">
+                                    <p class="card-text" style="text-decoration: underline;">
+                                        <h5 style="text-decoration: underline;">SPECIALISATION</h5>
+                                        <i class="fa fa-check" aria-hidden="true"></i> Heart specialist<br>
+                                        <i class="fa fa-check" aria-hidden="true"></i> De-Addiction<br>
+                                        <i class="fa fa-check" aria-hidden="true"></i> DNA checkout
+                                    </p>
+                                </p>
+                                
+                            </div>   
+                            
+                        </div>
+                    </div>  
+
+                </div>
+            </div>
+    <!--Team section end-->
+
+    <!--contact Section start-->
+    <div id="c"></div>
+            <h2 class="mt-5 text-center"  style="font-weight: bold; text-decoration:underline rgb(57, 211, 57);">Adress and Timetable</h2>
+            <div class="container" >
+                <div class="row text-center">
+                    <div class="contact shadow">
+                        <div class="col mt-5">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1885.8939141751089!2d73.10196550808435!3d19.029068796778727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1skl-4%20building%20no%2089%20kalamboli!5e0!3m2!1sen!2sin!4v1600088477713!5m2!1sen!2sin" 
+                            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <div class="contact shadow text-center">
+                        <div class="col mt-5">
+                            <div class="card-body"></div>
+                                <p style="text-align: center; font-weight:bold">Timetable</p>
+                                <br> 
+
+                                <table class="table table-borderless table-dark mt-3">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Sr.no</th>
+                                        <th scope="col">Days</th>
+                                        <th scope="col">Morning</th>
+                                        <th scope="col">Evening</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">1</th>
+                                        <td>Monday</td>
+                                        <td>11 to 2 </td>
+                                        <td>7 to 11</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">2</th>
+                                        <td>Tuesday</td>
+                                        <td>11 to 2</td>
+                                        <td>7 to 11</td>
+                                      </tr>
+                                      
+                                      <tr>
+                                        <th scope="row">3</th>
+                                        <td>Wedensday</td>
+                                        <td>11 to 2</td>
+                                        <td>7 to 11</td>
+                                      </tr>
+
+                                      <tr>
+                                        <th scope="row">4</th>
+                                        <td>Thursday</td>
+                                        <td>Closed</td>
+                                        <td>7 to 11</td>
+                                      </tr>
+
+                                      <tr>
+                                        <th scope="row">5</th>
+                                        <td>Friday</td>
+                                        <td>11 to 2</td>
+                                        <td>7 to 11</td>
+                                      </tr>
+
+                                      <tr>
+                                        <th scope="row">6</th>
+                                        <td>Saturday</td>
+                                        <td>11 to 2</td>
+                                        <td>7 to 09</td>
+                                      </tr>
+                                      
+                                      <tr>
+                                        <th scope="row">7</th>
+                                        <td>Sunday</td>
+                                        <td colspan="2">----closed----</td>
+                                        
+                                      </tr>
+                                    </tbody>
+                                  </table>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+    <!--contact Section end-->
+
+    <footer class="bg-dark text-white mt-3">
+
+        <div class="container">
+            <div class="row">
+            
+                <div class="col-sm-3 col-md-3 col-lg-4 mt-5">
+                    <i class="fa fa-location-arrow" aria-hidden="true"><h3>Address</h3></i> 
+                    <br>
+                    Kl-4/89/04 sec 4E<br> near samarth krupa medical<br> kalamboli - 410218, Maharashtra
+                </div>
+                
+                <div class="col-sm-3 col-md-3 col-lg-4 mt-5 text-center">
+                    <img src="img/logo2.jpg" width="100px" height="100px">
+                    <h6>copyrights &copy; 2020 All  rights are reserved</h6>
+                </div>
+
+                <div class="col-sm-3 col-md-3 col-lg-4 mt-5">
+                    <div class="icon text-center">
+                        <i class="fa fa-mobile" aria-hidden="true"><h3>contact</h3></i> 
+                        <p>+91 7506775987<br>
+                            +91 9867656428<br>
+                            +91 9867656429</p>
+                    </div>                  
+                </div>  
+            </div>
+        
+        </div>
+
+        <div class="container">
+            <div class="row mt-3">
+                <div class="col text-center">
+                    <a href="https://www.facebook.com/profile.php?id=100010384086653"><i class="fa fa-facebook" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;
+                   <a href="https://www.instagram.com/s_a_g_g_y_143"><i class="fa fa-instagram" aria-hidden="true"></i></a> &nbsp; &nbsp;&nbsp;
+                    <a href="https://www.github.com/moresagar41"><i class="fa fa-github" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
