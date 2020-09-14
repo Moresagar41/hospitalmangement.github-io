@@ -225,3 +225,9 @@ font-size: 22px;
     padding-bottom: 30px;
 }
 
+.whatsapp{
+    position: fixed;
+    right: 25px;
+    bottom: 55px;
+
+}
